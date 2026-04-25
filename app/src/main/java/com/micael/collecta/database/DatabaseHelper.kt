@@ -37,7 +37,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
                 "$COLUMN_USER_NAME TEXT," +
                 "$COLUMN_COLLECTOR_FULLNAME TEXT," +
                 "$COLUMN_BRAND_NAME TEXT," +
-                "$COLUMN_BRAND_LOGO TEXT," +
+                "$COLUMN_BRAND_LOGO BLOB," +
                 "$COLUMN_PHONE TEXT)")
 
         val createCollectionsTable = ("CREATE TABLE $TABLE_COLLECTIONS (" +
