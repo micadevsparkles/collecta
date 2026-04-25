@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    id("com.android.application") version "8.2.2"
+    id("org.jetbrains.kotlin.android") version "1.9.22"
 }
 
 android {
@@ -40,7 +40,8 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        // ATUALIZADO: 1.5.8 é a versão correta para o Kotlin 1.9.22
+        kotlinCompilerExtensionVersion = "1.5.8" 
     }
     packaging {
         resources {
